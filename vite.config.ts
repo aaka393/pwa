@@ -14,8 +14,7 @@ export default defineConfig({
         'favicon-16x16.png',
         'favicon-32x32.png',
         'favicon.ico',
-        'manifest.webmanifest',
-        
+        'manifest.webmanifest',  
       ],
       manifest: {
         name: 'My PWA App',
@@ -59,19 +58,6 @@ export default defineConfig({
             type: "image/png",
           }
         ],
-        screenshots: [
-          {
-            src: "screenshots/desktop-screenshot.png",
-            sizes: "1280x800",
-            type: "image/png",
-            form_factor: "wide"
-          },
-          {
-            src: "screenshots/mobile-screenshot.png",
-            sizes: "375x667",
-            type: "image/png"
-          }
-        ]
       },
     }),
   ],
