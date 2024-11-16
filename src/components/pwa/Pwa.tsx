@@ -2,13 +2,15 @@ import React from 'react'
 import useStore from './store'
 
 const Pwa: React.FC = () => {
-  const { count, increase, reset } = useStore()
-
+  const { count, increase, reset, isOnline } = useStore()
   return (
     <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-4">
       <div className="text-center p-6 bg-gray-800 rounded-lg shadow-lg max-w-sm w-full">
         <h1 className="text-3xl font-semibold mb-4">Progressive Web App</h1>
         <h2 className="text-xl mb-4">Count: {count}</h2>
+        <p className={`text-lg mb-4 ${isOnline ? 'text-green-500' : 'text-red-500'}`}>
+          Status: {isOnline ? 'online' : 'Offline'}
+        </p>
         <div className="space-x-4">
           <button 
             onClick={increase} 
