@@ -354,7 +354,7 @@ const InstallApp: React.FC = () => {
   return (
     <div className="w-full min-h-screen bg-gray-100">
       <div className="text-white bg-gray-800 p-4">
-        <h1 className="text-center">Welcome to My App</h1>
+        <h1 className="text-center">Welcome to My App!</h1>
       </div>
 
       {/* Show platform-specific banners */}
